@@ -17,10 +17,8 @@ func main() {
 		})
 	}
 
-	plt, err := plot.New()
-	if err != nil {
-		panic(err)
-	}
+	plt := plot.New()
+
 	plt.Y.Min, plt.X.Min, plt.Y.Max, plt.X.Max = 0, 0, 10, 10
 
 	if err := plotutil.AddLines(plt,
