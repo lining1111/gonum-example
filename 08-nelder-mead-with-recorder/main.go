@@ -47,8 +47,9 @@ func main() {
 
 	recorder := &Recorder{}
 
+	//NelderMead 下山单纯形法
 	result, err := optimize.Minimize(problem, []float64{1, 1}, &optimize.Settings{
-		Recorder: recorder,
+		Recorder: recorder, //记录器，来记录每次尝试求解的坐标
 	}, &optimize.NelderMead{})
 	if err != nil {
 		panic(err)

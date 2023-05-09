@@ -65,6 +65,15 @@ func main() {
 		Grad: Grad,
 	}
 
+	//BFGS
+	//CG 共轭梯度法
+	//CmaEsChol 协方差矩阵适应进化策略
+	//GradientDescent 梯度下降法
+	//GuessAndCheck 靠猜
+	//LBFGS 有限内存 BFGS
+	//ListSearch 搜索
+	//NelderMead 下山单纯形法
+	//Newton 牛顿法
 	methods := []struct {
 		Name   string
 		Method optimize.Method
