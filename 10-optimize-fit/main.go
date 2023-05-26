@@ -36,7 +36,7 @@ func main() {
 			b := x[1]
 			var sum float64
 			for _, point := range points2 {
-				y := a*point.X + b
+				y := a*point.X + b //当前情况下的计算值
 				sum += math.Abs(y - point.Y)
 			}
 			return sum
